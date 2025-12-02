@@ -1,0 +1,47 @@
+Task 1:
+task for today : 1. create test case to navigate to google.com 2. create test case to search playwright.dev in search box.
+ 
+clicking playwright url and landing on playwright site home page.
+ 
+import { test, expect } from '@playwright/test';
+ 
+test('navigate to google', async ({ page }) => {
+    await page.goto('https://www.google.com');
+    await expect(page).toHaveTitle(/Google/);
+});
+ 
+ 
+Task 2:
+Task -> navigate to Test application echarts under Charts tab -> locate frames for all charts -> for each chart highlight or display on colsole any of chart attributes. 
+
+Task 3:
+task -> forms layout page . write all locating strategies for form layout page using locator syntax rules and user facing locators.
+
+Task 4:
+const basicForm = page.locator('nb-card').filter({hasText:"Basic form"})
+ 
+task -> create const for all frames on forms layout page.
+ 
+
+Task 5:
+test('tool tips', async ({ page }) =>
+{
+  await page.getByTitle('Modal & Overlays').click()
+await page.getByTitle('Tooltip').click()
+ 
+ 
+const toolTipCard = page.locator('nb-card', {hasText:"Tooltip Placements"})
+await toolTipCard.getByRole('button',{name:"Top"}).hover()
+page.getByRole('tooltip')
+const toolTip = await page.locator('nbtooltip').textContent()
+await page.getByRole('tooltip').waitFor({state:'visible'})
+expect(toolTip).toEqual('This is a tooltip')
+const tooltipplace = await expect(toolTipCard.getByRole('button',{name:"Top"})).toHaveAttribute('ng-reflect-position','top')
+ 
+})
+ 
+task for today -> tool tips - starting with tooltips placements , Tooltip With Icon , Colored Tooltips.
+ 
+
+Task 6:
+task -> complete dialog boxes tab on test application.
