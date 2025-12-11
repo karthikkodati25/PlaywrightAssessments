@@ -1,0 +1,26 @@
+{
+  "name": "playwright-api-testing",
+  "version": "1.0.0",
+  "description": "---\r # Playwright API Testing Setup Guide\r ---",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "fakerjs",
+    "playwright api testing",
+    "playwright api testing example"
+  ],
+  "author": "Code with MMAK",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "luxon": "^3.4.0",
+    "npm-check-updates": "^16.11.1",
+    "rimraf": "^5.0.1"
+  }
+}

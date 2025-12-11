@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+ "test": "npx playwright test",
+ "test:headed": "npx playwright test --headed",
+ "test:debug": "npx playwright test --debug",
+ "show-report": "npx playwright show-report"
+}
+}
+

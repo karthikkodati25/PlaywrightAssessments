@@ -1,0 +1,10 @@
+node_modules/
+reports/
+.traces/
+traces/
+playwright-report/
+.splash/
+*.log
+.env
+dist/
+screenshots/
